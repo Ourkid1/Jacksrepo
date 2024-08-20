@@ -6,7 +6,7 @@ app.config["DEBUG"] = True
 
 SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://{username}:{password}@{hostname}/{databasename}".format(
     username="bannisterj",
-    password="Zebra2vdhqwbtg!",
+    password="",
     hostname="bannisterj.mysql.pythonanywhere-services.com",
     databasename="bannisterj$comments",
 )
