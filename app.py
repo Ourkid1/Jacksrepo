@@ -23,10 +23,10 @@ app.config["DEBUG"] = True
 #    id = db.Column(db.Integer, primary_key=True)
 #    content = db.Column(db.String(4096))
 
-@app.route("/contact", methods=["GET", "POST"])
-def contact():
-    if request.method == "GET":
-        return render_template('contact.html')
+#@app.route("/contact", methods=["GET", "POST"])
+#def contact():
+#    if request.method == "GET":
+#        return render_template('contact.html')
  #       return render_template("contact.html", comments=Comment.query.all())
 
  #   comment = Comment(content=request.form["contents"])
@@ -42,6 +42,11 @@ def home():
 @app.route('/about')  #  '/about'
 def about():
     return render_template('about.html')
+    
+@app.route("/contact", methods=["GET", "POST"])
+def contact():
+    if request.method == "GET":
+        return render_template('contact.html')
 
 
 
