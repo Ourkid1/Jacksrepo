@@ -26,7 +26,8 @@ app.config["DEBUG"] = True
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "GET":
-        return render_template("contact.html", comments=Comment.query.all())
+        return render_template('contact.html')
+ #       return render_template("contact.html", comments=Comment.query.all())
 
  #   comment = Comment(content=request.form["contents"])
  #   db.session.add(comment)
