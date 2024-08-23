@@ -7,7 +7,7 @@ app.config["DEBUG"] = True
 # Replace these values with your actual database configuration
 username = "root"
 password = "password1"
-hostname = "172.17.192.3"  # private IP
+hostname = "34.41.207.237" 
 databasename = "comments"
 
 SQLALCHEMY_DATABASE_URI = f"mysql+mysqlconnector://{username}:{password}@{hostname}/{databasename}"
