@@ -28,7 +28,7 @@ def contact():
     if request.method == "GET":
         return render_template("contact.html", comments=Comment.query.all())
 
-    comment = Comment(content=request.form["comment"])
+    comment = Comment(content=request.form["contents"])
     db.session.add(comment)
     db.session.commit()
     return redirect(url_for('contact'))
