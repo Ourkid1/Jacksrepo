@@ -30,7 +30,7 @@ def contact():
             print(f"Error fetching comments: {e}")
             return "An error occurred while fetching comments."
 
-    comment = Comment(content=request.form["comment"])
+    comment = Comment(content=request.form["contents"])
     db.session.add(comment)
     db.session.commit()
     return redirect(url_for('contact'))
